@@ -1,0 +1,38 @@
+<div class="container all">
+   
+    <div class="formelement">
+        <h2 style="text-align: center;">Register</h2>
+        <mat-form-field appearance="outline" class="formelement" hidden="true">
+            <mat-label>Id</mat-label>
+            <input matInput placeholder="name" [(ngModel)]="employeeRecords.Id" value="4">
+        </mat-form-field>
+    </div>
+
+    <div>
+        <div class="formelement">
+            <mat-form-field appearance="outline" class="formelement">
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="name" [(ngModel)]="employeeRecords.Name">
+            </mat-form-field>
+        
+        </div>
+
+        <div class="formelement">
+            <mat-form-field appearance="outline" >
+                <mat-label>Role</mat-label>
+                <input matInput placeholder="role" [(ngModel)]="employeeRecords.Role">
+            </mat-form-field>
+        </div>
+
+        <div class="formelement">
+            <mat-form-field appearance="outline" >
+                <mat-label>Department</mat-label>
+                <input matInput placeholder="Department" [(ngModel)]="employeeRecords.Department">
+            </mat-form-field>
+        </div>
+
+        <div class="formelement">
+            <button mat-raised-button color="accent" (click)="addEmp()">ADD</button>
+        </div>
+    </div>  
+</div>
